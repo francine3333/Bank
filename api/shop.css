@@ -1,0 +1,374 @@
+/* General Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #00c3ff;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header nav .nav-link {
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+header nav .nav-link:hover {
+    background-color: #555;
+    color: #ffd700;
+}
+
+#cart-count {
+    background-color: #ffd700;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn-primary {
+    background-color: #ffd700;
+    border-color: #ffd700;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+.hero .btn-primary:hover {
+    background-color: #f8c300;
+    border-color: #f8c300;
+}
+
+/* Categories Section */
+#categories {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#categories h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card a {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #f8c300;
+}
+
+/* Featured Products Section */
+#featured {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+#featured .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+#featured .card-body {
+    padding: 15px;
+}
+
+#featured .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#featured .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Table Wrapper - Scrollable */
+.table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;  /* For smooth scrolling on mobile */
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    min-width: 600px; /* Ensure that the table is wide enough to require scrolling */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.bar {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+}
+/* Responsive Styles */
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .btn-primary {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    #categories .card, #featured .card {
+        flex: 0 0 48%;
+    }
+
+    #categories .card-body, #featured .card-body {
+        padding: 15px;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header nav {
+        text-align: center;
+    }
+
+    header nav .nav-item {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    header nav .nav-link {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .btn-primary {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    #categories .card, #featured .card {
+        flex: 0 0 100%;
+    }
+
+    .card-body {
+        padding: 12px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+    .nav {
+        display: none; /* Hide the nav items by default on mobile */
+        flex-direction: column;
+        width: 100%;
+        background-color: #343a40;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px;
+    }
+
+    .nav.active {
+        display: flex; /* Show the nav items when the menu is active */
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger icon on mobile */
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+    .card a {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+
+/* Small Mobile Devices (Portrait mode) */
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero .btn-primary {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card a {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}

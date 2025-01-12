@@ -1,0 +1,151 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, #00BFFF, #87CEFA);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+header img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.login-container {
+    background-image: url("./download.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px; /* Reduced padding for smaller screens */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 95%; /* Width set to 90% for better fit on mobile */
+    max-width: 360px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px; /* Reduced margin for smaller screens */
+    color: #000000;
+    font-size: 24px;
+}
+
+.login-container input[type="text"], 
+.login-container input[type="email"], 
+.login-container input[type="password"] {
+    width: 90%;
+    padding: 10px; /* Reduced padding for smaller screens */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px; /* Reduced padding for smaller screens */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.login-container p {
+    margin-top: 20px;
+    color: #666;
+}
+
+.login-container a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.success {
+    color: green;
+    margin-bottom: 15px;
+}
+
+#showPassword {
+    margin-left: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px; /* Adjusted for smaller screens */
+    }
+
+    .login-container {
+        padding: 15px; /* Further reduced padding */
+        width: 95%; /* Further reduced width for better fit on mobile */
+        max-width: none; /* Remove max-width restriction */
+    }
+
+    .login-container h2 {
+        font-size: 20px; /* Adjusted font size */
+        margin-bottom: 15px; /* Reduced margin */
+    }
+
+    .login-container input[type="submit"] {
+        font-size: 14px; /* Adjusted font size */
+    }
+}
+
+@media (max-width: 600px) {
+    body{
+  margin: auto;
+  padding: auto;
+    }
+    h1 {
+        font-size: 24px; 
+    }
+
+    .login-container {
+        padding: 10px;
+    }
+
+    .login-container h2 {
+        font-size: 18px; 
+        margin-bottom: 10px; 
+    }
+    header img{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+
+    .login-container input[type="submit"] {
+        font-size: 12px;
+    }
+}
