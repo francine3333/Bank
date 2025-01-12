@@ -1,9 +1,8 @@
 {
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/"
-      }
-    ]
-  }
-  
+  "functions": {
+    "api/**/*.php": { "runtime": "vercel-php@0.6.0" }
+  },
+  "routes": [
+    { "src": "/login", "dest": "/api/login.php" }
+  ]
+}
